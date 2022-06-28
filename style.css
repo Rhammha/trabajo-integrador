@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2? family= EB+Garamond:wght@400;700;800 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+:root {
+  --fondo: #2f2a2a;
+  --blue: #054af880;
+  --blanco: #f4f4f8;
+  --bold: 800;
+  --medium: 700;
+  --regular: 400;
+}
+
+/* body */
+
+body {
+  width: 100vw;
+  font-family: "Garamond", sans-serif;
+  background-color: #2f2a2a;
+}
+/* header */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 2px black solid;
+  height: 13vh;
+  width: 100%;
+}
+
+.logo-header {
+  width: 60px;
+  height: 60px;
+  margin-left: 25px;
+}
+
+.logo-header:hover {
+  transform: rotate(-17deg);
+}
+
+.toggle {
+  list-style: none;
+  color: var(--blanco);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.toggle li {
+  margin: 0px 20px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  transition: all 0, 5s linear;
+  padding: 10px;
+}
+
+ul a{
+  text-decoration: none;
+  color: var(--blanco);
+}
+ul a :hover{
+  background-color: var(--blue);
+  border-radius: 2rem;
+
+}
+
+/* empieza el hero */
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px 15px;
+  width: 95vw;
+}
+
+@keyframes apareciendo {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+
+}
+.hero-img {
+  letter-spacing: 50px;
+  position: relative;
+  animation: apareciendo ease 1s 0.5s;
+}
+
+.titulo {
+  font-weight: 800;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.titulo span {
+  color: var(--blue);
+}
+
+.perro-hero {
+  position: absolute;
+  top: 60px;
+  height: 55vh;
+  width: 50vw;
+}
+
+.hero-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 1.5;
+  color: var(--blanco);s
+}
+
+.hero-container-text h2 {
+  margin-bottom: 20px;
+  padding:5px ;
+  border: 2px solid var(--blue);
+  letter-spacing: 10px;
+}
+
+.hero-container-text p {
+  margin-bottom: 40px;
+  width: 80%;
+  text-align: justify;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-hero {
+  color: white;
+  background-color: var(--blue);
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 45px;
+  padding: 0px 15px;
+  border-radius: 10px;
+}
+
+.boton-hero:hover {
+  transform: scale(1.2) all ease;
+  background-color: rgb(16, 24, 103);
+}
+
+/* section nosotros */
+.nosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  background-color: var(--blue);
+  margin: 0 40px 75px ;
+  padding: 5px;
+  border-radius: 2rem;
+}
+.nosotros-text{
+ margin: 0 30px;
+ text-align: justify;
+ line-height:2;
+}
+.nosotros-text h2{
+  margin-bottom: 10px;
+  letter-spacing: 7px;
+  border-bottom: 2px solid var(--fondo);
+} 
+
+.img{
+  width: 750px;
+  border-radius: 2rem;
+}
+
+/* termina section nosotros-inicia adopta. */
+
+.adopta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  background-color: var(--blue);
+  border-radius: 2rem;
+  padding: 5px;
+  margin: 0 40px 75px ;
+}
+
+.adopta-img img{
+  width:900px ;
+  border-radius: 2rem;
+}
+
+.adopta-text{
+  margin: 0 25px;
+}
+
+  .adopta-text h2{
+    text-align: center;
+    letter-spacing:5px;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+  }
+  .adopta-text p{
+    text-align: justify;
+    line-height: 1.5;
+  }
+  /* termina adopta-inicia titulo y galeria de imagenes grid */
+
+  .title-imgenes{
+    width: 700px;
+    margin: 0 auto;
+  }
+  .title-galeria{
+    color: var(--blanco);
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.5  ;
+    border: 2px solid var(--blue);
+    margin-bottom: 75px;
+  }
+
+  /* termina titulo de galeria de imagenes- empieza galeria de imagenes.Grid */
+
+  .galeria-container{ 
+  }
+  footer{
+    margin: 75px 20px ;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    color: var(--blanco);
+  }
+  .contacto-container{
+    width: 200px;
+  }
+  .contacto-container p{
+    margin-bottom: 15px;
+
+  }
+  footer img{
+    width: 60px;
+    height: 60px;
+  }
+  .footer-about  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+  .footer-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-about h3{
+    margin-bottom: 20px ;
+  }
+  .footer-about p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .iconos-footer i{
+    margin: 0px 20px;
+    font-size: 3rem;
+  }
+
+
+
+
+
+
+
+
+
+/* Logo fijo de whasap  */
+.fixed {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+@media (max-width: 1000px)
+{.hero-container, .hero-img, .hero-container-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap ;
+  margin: 25px auto;
+}
+
+.perro-hero{ top: 120px;right: 240px;
+  height: 80%;
+  width: 80%;
+
+}
+.titulo{
+  display: flex;
+justify-content: center;
+align-items: center;
+width: 25vw;
+letter-spacing: 5px;
+}
+}
+
+
+@media (max-width: 650px) 
+{
+/* menu hamburguesa */
+  .menuhambuguesa , .fa-solid {
+    font-size: 2rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .toggle {
+    display: none;
+    text-align: center;
+    background-color: #dae8ec;
+  }
+
+  .toggle li {
+    display: block;
+  }
+
+  .menu-toggle:checked + .toggle {
+    display: block;
+  }
+
+  /* hero mobile */
+  .perro-hero{
+    display: none;
+  }
+      .titulo, span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .boton-hero{
+      margin-bottom: 25px;
+    }
+}
+
+
