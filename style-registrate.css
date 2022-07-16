@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2? family= EB+Garamond:wght@400;700;800 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+:root {
+  --fondo: #2f2a2a;
+  --blue: #054af8e4;
+  --blanco: #f4f4f8;
+  --bold: 800;
+  --medium: 700;
+  --regular: 400;
+}
+
+/* body */
+
+body {
+  font-family: "Garamond", sans-serif;
+  max-width: 1300px;
+  background: url(./assets/iMac\ -\ 1.png) center;
+}
+.conteiner-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--blanco);
+  width: 90%;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  padding: 10px;
+}
+.conteiner {
+  width: 70%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #054af84b 3px solid;
+  padding: 20px;
+}
+.conteiner input {
+  width: 90%;
+  margin-top: 7px;
+}
+.conteiner div {
+  margin: 10px auto;
+}
+.boton {
+  color: var(--blanco);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  border: none;
+  width: 90%;
+}
+.boton:hover {
+  transform: scale(1.2) all ease;
+  background-color: rgb(16, 24, 103);
+}
+.fixed {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+.pag-principal {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  background-color: var(--blue);
+  padding: 5px;
+  border-radius: 2rem;
+}
+.pag-principal:hover {
+  transform: rotate(-17deg);
+}
+@media (min-width: 800px) {
+  h1 {
+    width: 50%;
+  }
+  .conteiner {
+    width: 25%;
+  }
+}
