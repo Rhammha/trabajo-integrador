@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 :root {
   --fondo: #2f2a2a;
@@ -65,12 +64,10 @@ body {
   margin: 0px 20px;
   font-weight: 800;
   font-size: 1.5rem;
-  transition: all 0, 5s linear;
   padding: 10px;
 }
 
-nav input,
-label {
+nav input {
   display: none;
 }
 
@@ -444,10 +441,14 @@ footer img {
   /* menu hamburguesa */
 
   .fa-solid {
+    font-size: 2.5rem;
     display: block;
+    position: absolute;
+    right: 25px;
+    top: 20px;
   }
 
-  #menu-toggle {
+  .menu-toggle {
     display: none;
     position: relative;
   }
@@ -458,7 +459,7 @@ footer img {
     background-color: var(--blue);
     border-radius: 2rem;
     position: absolute;
-    top: 75px;
+    top: 82px;
     right: 10px;
     z-index: 1;
   }
@@ -467,7 +468,7 @@ footer img {
     display: block;
   }
 
-  #menu-toggle:checked + .toggle {
+  .menu-toggle:checked + .toggle {
     display: block;
   }
 
