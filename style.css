@@ -49,6 +49,10 @@ body {
   transform: rotate(-17deg);
 }
 
+.fa-solid {
+  display: none;
+}
+
 .toggle {
   list-style: none;
   color: var(--blanco);
@@ -65,13 +69,20 @@ body {
   padding: 10px;
 }
 
+nav input,
+label {
+  display: none;
+}
+
 ul a {
   text-decoration: none;
   color: var(--blanco);
 }
+
 ul a :hover {
   background-color: var(--blue);
   border-radius: 2rem;
+  transform: scale(1.1);
 }
 
 /* empieza el hero */
@@ -80,7 +91,7 @@ ul a :hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 100px 15px;
+  margin: 150px 15px;
   width: 95%;
 }
 
@@ -159,7 +170,7 @@ ul a :hover {
 }
 
 .boton-hero:hover {
-  transform: scale(1.2) all ease;
+  transform: scale(1.1);
   background-color: rgb(16, 24, 103);
 }
 
@@ -431,26 +442,32 @@ footer img {
 
 @media (max-width: 650px) {
   /* menu hamburguesa */
-  .menuhambuguesa,
+
   .fa-solid {
-    font-size: 2rem;
+    display: block;
   }
 
-  .menu-toggle {
+  #menu-toggle {
     display: none;
+    position: relative;
   }
 
   .toggle {
     display: none;
     text-align: center;
-    background-color: #dae8ec;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    z-index: 1;
   }
 
   .toggle li {
     display: block;
   }
 
-  .menu-toggle:checked + .toggle {
+  #menu-toggle:checked + .toggle {
     display: block;
   }
 

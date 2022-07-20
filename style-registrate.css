@@ -55,6 +55,7 @@ h1 {
   align-items: center;
   border: #054af84b 3px solid;
   padding: 20px;
+  margin: bottom 50px;
 }
 .conteiner input {
   width: 90%;
@@ -106,5 +107,6 @@ h1 {
   }
   .conteiner {
     width: 25%;
+    margin-bottom: 50px;
   }
 }
